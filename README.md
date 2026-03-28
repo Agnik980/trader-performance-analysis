@@ -1,29 +1,142 @@
 # Trader Performance Analysis
 
+## Project Overview
+
+This project analyzes the relationship between **trader performance** and **market sentiment (Fear & Greed Index)**.
+The goal is to understand how market emotions influence trading outcomes and to derive actionable insights for better trading strategies.
+
+---
+
 ## Objective
-Analyze trader performance using trading dataset.
 
-## Setup
-pip install pandas matplotlib
+* Analyze how **market sentiment (Fear/Greed)** impacts trader profitability
+* Identify patterns in trading behavior under different sentiment conditions
+* Provide **data-driven strategy recommendations**
 
-##  How to Run
-1. Untitled 10.ipynb
-2. Run all cells
+---
+
+## Dataset
+
+The project uses:
+
+* Trader performance data (PnL, trade size, buy/sell activity)
+* Market sentiment data (Fear & Greed Index)
+
+---
+
+## ⚙️ Methodology
+
+### 1. Data Cleaning
+
+* Removed missing/null values
+* Standardized column formats
+
+### 2. Feature Engineering
+
+* Created new features:
+
+  * **PnL_bin** (Profit/Loss classification)
+  * **Normalized PnL**
+  * **Buy Ratio**
+  * **Average Trade Size**
+
+### 3. Exploratory Data Analysis (EDA)
+
+* Compared trader performance across sentiment categories
+* Visualized trends using bar charts and line plots
+
+### 4. Basic Predictive Modeling
+
+* Built a **Logistic Regression model** to predict:
+
+  * Whether a trade will be **profitable or not**
+* Features used:
+
+  * Sentiment
+  * Trade size
+  * Buy ratio
+
+---
+
+## Key Insights
+
+* Traders tend to earn **higher profits during Greed phases**
+* Losses are more frequent during **Fear phases**
+* Trading behavior changes significantly with sentiment
+* Risk-taking increases during high market optimism
+
+---
+
+## Strategy Recommendations
+
+*  Avoid trading during **Extreme Fear** (high loss probability)
+* Increase position size cautiously during **Greed phases**
+* Use **market sentiment as an input feature** in trading strategies
+* Apply **risk management (stop-loss)** during volatile periods
+
+---
+
+## Tools & Technologies
+
+* Python
+* Pandas, NumPy
+* Matplotlib, Seaborn
+
+---
+
+## How to Run
+
+1. Clone the repository:
+
+```
+git clone https://github.com/your-username/trader-performance-analysis.git
+```
+
+2. Navigate to the project folder:
+
+```
+cd trader-performance-analysis
+```
+
+3. Install required libraries:
+
+```
+pip install -r requirements.txt
+```
+
+4. Run the notebook:
+
+```
+jupyter notebook
+```
+
+---
 
 ## Output
-Closed PNL VS Classificatiion
-Trade analysis
-leverage distribution
-frequency distribution
-consitent winners
 
-## Insights
-- Win rate around 37.79%
-- Long/Short performance differs
-- Certain coins perform better
+* Visualizations of trader performance vs sentiment
+* Frequency distribution
+* position size analysis
+* long short ratio classification
+* leverage distribution
+* Tred Frequency
 
-## Recommendation
-- Focus on high-performing trades
-- Manage risk using stop-loss
+---
+
+##  Conclusion
+
+Market sentiment plays a crucial role in trading performance.
+By incorporating sentiment analysis into trading strategies, traders can make more informed decisions and improve profitability.
+
+---
+
+## Future Improvements
+
+* Add advanced ML models (Random Forest, XGBoost)
+* Build an interactive dashboard (Power BI / Streamlit)
+* Perform time-series analysis
+
+---
+
 
 
