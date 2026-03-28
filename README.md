@@ -85,41 +85,30 @@ The project uses:
 ---
 
 ## How to Run
+1. Run the notebook:
+ jupyter notebook
 
-1. Clone the repository:
-
-```
-git clone https://github.com/your-username/trader-performance-analysis.git
-```
-
-2. Navigate to the project folder:
-
-```
-cd trader-performance-analysis
-```
-
-3. Install required libraries:
-
-```
-pip install -r requirements.txt
-```
-
-4. Run the notebook:
-
-```
-jupyter notebook
-```
-
----
 
 ## Output
 
-* Visualizations of trader performance vs sentiment
+* Average Closed PnL by Classification
+  ![Uploading image.png…]()
 * Frequency distribution
+  ![Uploading output.png…]()
+
 * position size analysis
+  ![Uploading pos.png…]()
+
 * long short ratio classification
+  ![Uploading longshort.png…]()
+
 * leverage distribution
+  ![Uploading leverage.png…]()
+
 * Tred Frequency
+  ![Uploading Tred Frequency.png…]()
+
+
 
 ---
 
